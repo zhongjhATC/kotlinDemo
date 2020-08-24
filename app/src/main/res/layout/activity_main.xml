@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnFun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="函数"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="字符串"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnNull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NULL检查机制"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sum" />
+
+            <Button
+                android:id="@+id/btnSum2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sum2" />
+
+            <Button
+                android:id="@+id/btnSum3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sum3" />
+
+            <Button
+                android:id="@+id/btnSum4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sum4" />
+
+            <Button
+                android:id="@+id/btnSum5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sum5" />
+
+            <Button
+                android:id="@+id/btnVararg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vararg可变长函数" />
+
+            <Button
+                android:id="@+id/btnLambda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lambda表达式" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
