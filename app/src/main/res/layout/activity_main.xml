@@ -6,9 +6,15 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Kotlin 基础语法" />
 
         <Button
             android:id="@+id/btnFun"
@@ -29,6 +35,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="NULL检查机制"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnIs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="is(类似instanceof)"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="区间.."
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Kotlin 基本数据类型" />
+
+        <Button
+            android:id="@+id/btnCompare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="比较两个数字"
             tools:ignore="MissingConstraints" />
 
     </LinearLayout>

@@ -3,9 +3,7 @@ package com.zhongjh.kotlindemo
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.zhongjh.kotlindemo.kotlin.CharacterActivity
-import com.zhongjh.kotlindemo.kotlin.FunActivity
-import com.zhongjh.kotlindemo.kotlin.NullActivity
+import com.zhongjh.kotlindemo.kotlin.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -25,6 +23,16 @@ class MainActivity : AppCompatActivity() {
         btnNull.setOnClickListener {
             val intent = Intent(this, NullActivity::class.java)
             startActivity(intent)
+        }
+
+        btnIs.setOnClickListener {
+            val intent = Intent(this, IsActivity::class.java)
+            startActivity(intent);
+        }
+
+        btnSection.setOnClickListener {
+            val intent = Intent(this, SectionActivity::class.java)
+            startActivity(intent);
         }
     }
 

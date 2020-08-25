@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".kotlin.NullActivity"></activity>
+        <activity android:name=".kotlin.CompareActivity"></activity>
+        <activity android:name=".kotlin.SectionActivity" />
+        <activity android:name=".kotlin.IsActivity" />
+        <activity android:name=".kotlin.NullActivity" />
         <activity android:name=".kotlin.CharacterActivity" />
         <activity android:name=".kotlin.FunActivity" />
         <activity android:name=".MainActivity">
