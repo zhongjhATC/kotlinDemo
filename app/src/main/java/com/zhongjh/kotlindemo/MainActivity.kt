@@ -3,7 +3,9 @@ package com.zhongjh.kotlindemo
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.zhongjh.kotlindemo.kotlin.*
+import com.zhongjh.kotlindemo.kotlin.datatype.AnOperatorActivity
+import com.zhongjh.kotlindemo.kotlin.datatype.CompareActivity
+import com.zhongjh.kotlindemo.kotlin.grammar.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -34,6 +36,17 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SectionActivity::class.java)
             startActivity(intent);
         }
+
+        btnCompare.setOnClickListener {
+            val intent = Intent(this, CompareActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnAnOperator.setOnClickListener {
+            val intent = Intent(this, AnOperatorActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
 }

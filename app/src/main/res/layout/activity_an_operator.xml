@@ -21,10 +21,10 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/btnCompare"
+                android:id="@+id/btnShl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="比较两个数字" />
+                android:text="shl" />
 
         </LinearLayout>
 

@@ -1,4 +1,4 @@
-package com.zhongjh.kotlindemo.kotlin
+package com.zhongjh.kotlindemo.kotlin.grammar
 
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity

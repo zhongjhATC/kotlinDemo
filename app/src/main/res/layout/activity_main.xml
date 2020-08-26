@@ -64,6 +64,13 @@
             android:text="比较两个数字"
             tools:ignore="MissingConstraints" />
 
+        <Button
+            android:id="@+id/btnAnOperator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="位操作符"
+            tools:ignore="MissingConstraints" />
+
     </LinearLayout>
 
 </ScrollView>

@@ -9,12 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".kotlin.CompareActivity"></activity>
-        <activity android:name=".kotlin.SectionActivity" />
-        <activity android:name=".kotlin.IsActivity" />
-        <activity android:name=".kotlin.NullActivity" />
-        <activity android:name=".kotlin.CharacterActivity" />
-        <activity android:name=".kotlin.FunActivity" />
+        <activity android:name=".kotlin.datatype.AnOperatorActivity"></activity>
+        <activity android:name=".kotlin.datatype.TypeConversionActivity" />
+        <activity android:name=".kotlin.datatype.CompareActivity" />
+        <activity android:name=".kotlin.grammar.SectionActivity" />
+        <activity android:name=".kotlin.grammar.IsActivity" />
+        <activity android:name=".kotlin.grammar.NullActivity" />
+        <activity android:name=".kotlin.grammar.CharacterActivity" />
+        <activity android:name=".kotlin.grammar.FunActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
