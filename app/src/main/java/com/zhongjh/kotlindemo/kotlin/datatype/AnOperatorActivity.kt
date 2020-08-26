@@ -8,6 +8,7 @@ import kotlinx.android.synthetic.main.activity_an_operator.*
 
 /**
  * 位操作符
+ * https://www.cnblogs.com/yinfj/p/10647393.html
  */
 class AnOperatorActivity : AppCompatActivity() {
 
