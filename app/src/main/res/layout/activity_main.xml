@@ -71,6 +71,20 @@
             android:text="位操作符"
             tools:ignore="MissingConstraints" />
 
+        <Button
+            android:id="@+id/btnChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="字符"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnCharacterString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="字符串操作"
+            tools:ignore="MissingConstraints" />
+
     </LinearLayout>
 
 </ScrollView>

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".kotlin.datatype.AnOperatorActivity"></activity>
+        <activity android:name=".kotlin.datatype.CharacterStringActivity"></activity>
+        <activity android:name=".kotlin.datatype.ArrayActivity" />
+        <activity android:name=".kotlin.datatype.CharActivity" />
+        <activity android:name=".kotlin.datatype.AnOperatorActivity" />
         <activity android:name=".kotlin.datatype.TypeConversionActivity" />
         <activity android:name=".kotlin.datatype.CompareActivity" />
         <activity android:name=".kotlin.grammar.SectionActivity" />

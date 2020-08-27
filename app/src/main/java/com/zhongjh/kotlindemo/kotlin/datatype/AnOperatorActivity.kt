@@ -8,14 +8,18 @@ import kotlinx.android.synthetic.main.activity_an_operator.*
 
 /**
  * 位操作符
- * https://www.cnblogs.com/yinfj/p/10647393.html
+ * 关于位操作符详解可以看该链接 https://blog.csdn.net/liwenxia626/article/details/80789671
+ * 基本解释就是：
+ * 5转换为二进制：0000 0000 0000 0000 0000 0000 0000 0101
+ * 3转换为二进制：0000 0000 0000 0000 0000 0000 0000 0011
+ * and比较二级制：0000 0000 0000 0000 0000 0000 0000 0001 换算就是1
  */
 class AnOperatorActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_an_operator)
-        btnShl.setOnClickListener { main() }
+        btnAnOperator.setOnClickListener { main() }
     }
 
     @SuppressLint("SetTextI18n")
@@ -37,9 +41,20 @@ class AnOperatorActivity : AppCompatActivity() {
         tvContent.append("\n")
 
         var e = a and b;
-        tvContent.append("$aStr and " + Integer.toBinaryString(b) + " : " + Integer.toBinaryString(e)) //  无符号右移位(Java’s >>>)，预期结果
+        tvContent.append(Integer.toBinaryString(a) + " and " + Integer.toBinaryString(a) + " : " + Integer.toBinaryString(e)) //  与运算符，相同则是1，不同则是0
         tvContent.append("\n")
 
+        var f = a or b;
+        tvContent.append(Integer.toBinaryString(a) + " and " + Integer.toBinaryString(a) + " : " + Integer.toBinaryString(f)) //  或运算符，只要有个是1，那么结果就是1，否则为0
+        tvContent.append("\n")
+
+        var g = a xor b;
+        tvContent.append(Integer.toBinaryString(a) + " and " + Integer.toBinaryString(a) + " : " + Integer.toBinaryString(g)) //  异或运算符，相同则是0，不同则是1
+        tvContent.append("\n")
+
+        var h = a.inv();
+        tvContent.append(Integer.toBinaryString(a) + ".inv() : " + Integer.toBinaryString(h)) //  反向运算符,即是将16进制所有反向改变
+        tvContent.append("\n")
     }
 
 
