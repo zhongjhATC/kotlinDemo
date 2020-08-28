@@ -3,6 +3,7 @@ package com.zhongjh.kotlindemo
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.zhongjh.kotlindemo.kotlin.condition.IfActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.AnOperatorActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.CharActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.CharacterStringActivity
@@ -58,6 +59,18 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CharacterStringActivity::class.java)
             startActivity(intent)
         }
+
+        btnCharacterStringTemp.setOnClickListener {
+            val intent = Intent(this, CharacterTempActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnIF.setOnClickListener {
+            val intent = Intent(this, IfActivity::class.java)
+            startActivity(intent)
+        }
+
+
 
     }
 

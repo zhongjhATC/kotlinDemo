@@ -82,8 +82,30 @@
             android:id="@+id/btnCharacterString"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="字符串操作"
+            android:text="字符串"
             tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnCharacterStringTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="字符串模板"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Kotlin 条件控制" />
+
+        <Button
+            android:id="@+id/btnIF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="if表达式"
+            tools:ignore="MissingConstraints" />
+
+
 
     </LinearLayout>
 
