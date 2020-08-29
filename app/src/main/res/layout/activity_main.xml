@@ -105,6 +105,40 @@
             android:text="if表达式"
             tools:ignore="MissingConstraints" />
 
+        <Button
+            android:id="@+id/btnRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在区间内"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnWhen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="when"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="循环" />
+
+        <Button
+            android:id="@+id/btnFor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="for"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnWhile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="while"
+            tools:ignore="MissingConstraints" />
+
 
 
     </LinearLayout>

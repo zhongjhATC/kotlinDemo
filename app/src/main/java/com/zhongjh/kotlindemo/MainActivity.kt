@@ -4,10 +4,13 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.zhongjh.kotlindemo.kotlin.condition.IfActivity
+import com.zhongjh.kotlindemo.kotlin.condition.RangeActivity
+import com.zhongjh.kotlindemo.kotlin.condition.WhenActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.AnOperatorActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.CharActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.CharacterStringActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.CompareActivity
+import com.zhongjh.kotlindemo.kotlin.forLoop.WhileActivity
 import com.zhongjh.kotlindemo.kotlin.grammar.*
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -70,8 +73,20 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btnRange.setOnClickListener {
+            val intent = Intent(this, RangeActivity::class.java)
+            startActivity(intent)
+        }
 
+        btnWhen.setOnClickListener {
+            val intent = Intent(this, WhenActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnWhile.setOnClickListener {
+            val intent = Intent(this, WhileActivity::class.java)
+            startActivity(intent)
+        }
 
     }
-
 }

@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".kotlin.condition.IfActivity"></activity>
+        <activity android:name=".kotlin.forLoop.WhileActivity"></activity>
+        <activity android:name=".kotlin.forLoop.ForActivity" />
+        <activity android:name=".kotlin.condition.WhenActivity" />
+        <activity android:name=".kotlin.condition.RangeActivity" />
+        <activity android:name=".kotlin.condition.IfActivity" />
         <activity android:name=".kotlin.grammar.CharacterTempActivity" />
         <activity android:name=".kotlin.datatype.CharacterStringActivity" />
         <activity android:name=".kotlin.datatype.ArrayActivity" />
