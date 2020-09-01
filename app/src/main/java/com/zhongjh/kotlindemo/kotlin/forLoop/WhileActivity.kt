@@ -10,16 +10,17 @@ class WhileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_while)
+        btnOperator.setOnClickListener { main() }
     }
 
-    fun main(args: Array<String>) {
+    fun main() {
         tvContent.append("----while 使用-----")
         tvContent.append("\n")
         var x = 5
         while (x > 0) {
             tvContent.append(x--.toString())
         }
-        tvContent.append("----while 使用-----")
+        tvContent.append("----do...while 使用-----")
         tvContent.append("\n")
         var y = 5
         do {
