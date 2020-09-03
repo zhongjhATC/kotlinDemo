@@ -139,7 +139,18 @@
             android:text="while"
             tools:ignore="MissingConstraints" />
 
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="return \ break \ continue"
+            tools:ignore="MissingConstraints" />
 
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出" />
 
     </LinearLayout>
 

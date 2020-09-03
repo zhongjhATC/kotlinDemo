@@ -1,7 +1,9 @@
 package com.zhongjh.kotlindemo
 
+import android.app.ActivityManager
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.zhongjh.kotlindemo.kotlin.condition.IfActivity
 import com.zhongjh.kotlindemo.kotlin.condition.RangeActivity
@@ -10,6 +12,7 @@ import com.zhongjh.kotlindemo.kotlin.datatype.AnOperatorActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.CharActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.CharacterStringActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.CompareActivity
+import com.zhongjh.kotlindemo.kotlin.forLoop.ReturnActivity
 import com.zhongjh.kotlindemo.kotlin.forLoop.WhileActivity
 import com.zhongjh.kotlindemo.kotlin.grammar.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -86,6 +89,26 @@ class MainActivity : AppCompatActivity() {
         btnWhile.setOnClickListener {
             val intent = Intent(this, WhileActivity::class.java)
             startActivity(intent)
+        }
+
+        btnReturn.setOnClickListener {
+            val intent = Intent(this, ReturnActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnExit.setOnClickListener {
+//            Handler().postDelayed(Runnable {
+//                android.os.Process.killProcess(android.os.Process.myPid());
+//
+//                System.exit(0);
+//            }, 500)
+
+            val am = getSystemService(ACTIVITY_SERVICE)
+            am
+
+//            ActivityManager am = (ActivityManager) getSystemService(ACTIVITY_SERVICE)
+//            am.killBackgroundProcesses("cn.com.android123.cwj")
+
         }
 
     }
