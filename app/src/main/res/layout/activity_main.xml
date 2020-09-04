@@ -146,6 +146,40 @@
             android:text="return \ break \ continue"
             tools:ignore="MissingConstraints" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Kotlin 类和对象" />
+
+        <Button
+            android:id="@+id/btnClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="class"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnNest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="嵌套类"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnInner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内部类"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnAnonymousInner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="匿名内部类"
+            tools:ignore="MissingConstraints" />
+
         <Button
             android:id="@+id/btnExit"
             android:layout_width="wrap_content"

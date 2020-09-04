@@ -15,6 +15,7 @@ import com.zhongjh.kotlindemo.kotlin.datatype.CompareActivity
 import com.zhongjh.kotlindemo.kotlin.forLoop.ReturnActivity
 import com.zhongjh.kotlindemo.kotlin.forLoop.WhileActivity
 import com.zhongjh.kotlindemo.kotlin.grammar.*
+import com.zhongjh.kotlindemo.kotlin.kotlinclass.PersonActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -96,16 +97,29 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btnClass.setOnClickListener {
+            val intent = Intent(this, PersonActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnNest.setOnClickListener {
+
+        }
+
+        btnInner.setOnClickListener {
+
+        }
+
+        btnAnonymousInner.setOnClickListener {
+
+        }
+
         btnExit.setOnClickListener {
 //            Handler().postDelayed(Runnable {
 //                android.os.Process.killProcess(android.os.Process.myPid());
 //
 //                System.exit(0);
 //            }, 500)
-
-            val am = getSystemService(ACTIVITY_SERVICE)
-            am
-
 //            ActivityManager am = (ActivityManager) getSystemService(ACTIVITY_SERVICE)
 //            am.killBackgroundProcesses("cn.com.android123.cwj")
 

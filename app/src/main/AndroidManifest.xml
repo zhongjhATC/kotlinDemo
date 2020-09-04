@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".kotlin.kotlinclass.PersonActivity"></activity>
+        <activity android:name=".kotlin.kotlinclass.AnonymousInnerActivity"></activity>
+        <activity android:name=".kotlin.kotlinclass.InnerActivity" />
+        <activity android:name=".kotlin.kotlinclass.NestActivity" />
+        <activity android:name=".kotlin.kotlinclass.AbstractActivity" />
+        <activity android:name=".kotlin.kotlinclass.PersonActivity" />
         <activity android:name=".kotlin.forLoop.ReturnActivity" />
         <activity android:name=".kotlin.forLoop.WhileActivity" />
         <activity android:name=".kotlin.forLoop.ForActivity" />
