@@ -5,6 +5,9 @@ import android.os.Bundle
 import com.zhongjh.kotlindemo.R
 import kotlinx.android.synthetic.main.activity_person.*
 
+/**
+ * 类的演示
+ */
 class PersonActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

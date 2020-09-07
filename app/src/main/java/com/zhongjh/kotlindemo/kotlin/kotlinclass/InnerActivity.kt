@@ -5,6 +5,9 @@ import android.os.Bundle
 import com.zhongjh.kotlindemo.R
 import kotlinx.android.synthetic.main.activity_inner.*
 
+/**
+ * 演示内部类
+ */
 class InnerActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

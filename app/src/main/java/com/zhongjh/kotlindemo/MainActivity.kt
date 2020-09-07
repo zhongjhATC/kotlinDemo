@@ -5,6 +5,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
+import com.zhongjh.kotlindemo.kotlin.any.overwriteclass.OverwriteActivity
+import com.zhongjh.kotlindemo.kotlin.any.subclass.SubclassActivity
 import com.zhongjh.kotlindemo.kotlin.condition.IfActivity
 import com.zhongjh.kotlindemo.kotlin.condition.RangeActivity
 import com.zhongjh.kotlindemo.kotlin.condition.WhenActivity
@@ -15,6 +17,9 @@ import com.zhongjh.kotlindemo.kotlin.datatype.CompareActivity
 import com.zhongjh.kotlindemo.kotlin.forLoop.ReturnActivity
 import com.zhongjh.kotlindemo.kotlin.forLoop.WhileActivity
 import com.zhongjh.kotlindemo.kotlin.grammar.*
+import com.zhongjh.kotlindemo.kotlin.kotlinclass.AnonymousInnerActivity
+import com.zhongjh.kotlindemo.kotlin.kotlinclass.InnerActivity
+import com.zhongjh.kotlindemo.kotlin.kotlinclass.NestActivity
 import com.zhongjh.kotlindemo.kotlin.kotlinclass.PersonActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -103,16 +108,31 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnNest.setOnClickListener {
-
+            val intent = Intent(this, NestActivity::class.java)
+            startActivity(intent)
         }
 
         btnInner.setOnClickListener {
-
+            val intent = Intent(this, InnerActivity::class.java)
+            startActivity(intent)
         }
 
         btnAnonymousInner.setOnClickListener {
-
+            val intent = Intent(this, AnonymousInnerActivity::class.java)
+            startActivity(intent)
         }
+
+        btnSubClass.setOnClickListener {
+            val intent = Intent(this, SubclassActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnOverWriteClass.setOnClickListener {
+            val intent = Intent(this, OverwriteActivity::class.java)
+            startActivity(intent)
+        }
+
+//        btnOverWriteProperty
 
         btnExit.setOnClickListener {
 //            Handler().postDelayed(Runnable {

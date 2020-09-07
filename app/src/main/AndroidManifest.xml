@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".kotlin.kotlinclass.AnonymousInnerActivity"></activity>
+        <activity android:name=".kotlin.any.overwriteclass.OverwriteActivity"></activity>
+        <activity android:name=".kotlin.any.subclass.SubclassActivity" />
+        <activity android:name=".kotlin.kotlinclass.AnonymousInnerActivity" />
         <activity android:name=".kotlin.kotlinclass.InnerActivity" />
         <activity android:name=".kotlin.kotlinclass.NestActivity" />
         <activity android:name=".kotlin.kotlinclass.AbstractActivity" />

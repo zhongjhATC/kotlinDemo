@@ -2,6 +2,9 @@ package com.zhongjh.kotlindemo.kotlin.kotlinclass
 
 import java.util.*
 
+/**
+ * 类的演示
+ */
 class Person constructor(val firstName: String) {
 
     constructor(firstName: String, no: Int) : this(firstName) {
