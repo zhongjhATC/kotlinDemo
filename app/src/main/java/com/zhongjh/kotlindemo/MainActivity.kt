@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.zhongjh.kotlindemo.kotlin.any.overwriteclass.OverwriteActivity
+import com.zhongjh.kotlindemo.kotlin.any.overwriteproperty.OverwritePropertyActivity
 import com.zhongjh.kotlindemo.kotlin.any.subclass.SubclassActivity
 import com.zhongjh.kotlindemo.kotlin.condition.IfActivity
 import com.zhongjh.kotlindemo.kotlin.condition.RangeActivity
@@ -132,7 +133,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-//        btnOverWriteProperty
+        btnOverWriteProperty.setOnClickListener {
+            val intent = Intent(this, OverwritePropertyActivity::class.java)
+            startActivity(intent)
+        }
 
         btnExit.setOnClickListener {
 //            Handler().postDelayed(Runnable {
