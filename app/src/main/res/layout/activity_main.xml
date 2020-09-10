@@ -207,6 +207,40 @@
             android:text="重写属性"
             tools:ignore="MissingConstraints" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Kotlin 接口" />
+
+        <Button
+            android:id="@+id/btnKotilinInterface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="接口"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnFunOverwrite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重写函数"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnExpandFun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扩展函数"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnExpandNull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扩展空对象"
+            tools:ignore="MissingConstraints" />
+
         <Button
             android:id="@+id/btnExit"
             android:layout_width="wrap_content"

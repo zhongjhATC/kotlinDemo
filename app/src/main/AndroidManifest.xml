@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".kotlin.any.overwriteproperty.OverwritePropertyActivity"></activity>
+        <activity android:name=".kotlin.expand.associatedobject.ExpandAssociatedObjectActivity"></activity>
+        <activity android:name=".kotlin.expand.eproperty.ExpandPropertyActivity" />
+        <activity android:name=".kotlin.expand.enull.ExpandNullActivity" />
+        <activity android:name=".kotlin.expand.efun.ExpandFunActivity" />
+        <activity android:name=".kotlin.kotlininterface.funoverwrite.FunOverwriteActivity" />
+        <activity android:name=".kotlin.kotlininterface.kotilininterface.KotlinInterfaceActivity" />
+        <activity android:name=".kotlin.any.overwriteproperty.OverwritePropertyActivity" />
         <activity android:name=".kotlin.any.overwriteclass.OverwriteActivity" />
         <activity android:name=".kotlin.any.subclass.SubclassActivity" />
         <activity android:name=".kotlin.kotlinclass.AnonymousInnerActivity" />

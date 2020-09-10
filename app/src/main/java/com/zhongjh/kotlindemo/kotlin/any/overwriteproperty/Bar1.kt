@@ -2,8 +2,6 @@ package com.zhongjh.kotlindemo.kotlin.any.overwriteproperty
 
 class Bar1 : Foo() {
 
-    override val x: Int
-        get() {
-            return x + 1
-        }
+    override var x: Int = 0
+        get() = field + 1
 }

@@ -1,9 +1,7 @@
 package com.zhongjh.kotlindemo
 
-import android.app.ActivityManager
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.zhongjh.kotlindemo.kotlin.any.overwriteclass.OverwriteActivity
 import com.zhongjh.kotlindemo.kotlin.any.overwriteproperty.OverwritePropertyActivity
@@ -15,6 +13,8 @@ import com.zhongjh.kotlindemo.kotlin.datatype.AnOperatorActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.CharActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.CharacterStringActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.CompareActivity
+import com.zhongjh.kotlindemo.kotlin.expand.efun.ExpandFunActivity
+import com.zhongjh.kotlindemo.kotlin.expand.enull.ExpandNullActivity
 import com.zhongjh.kotlindemo.kotlin.forLoop.ReturnActivity
 import com.zhongjh.kotlindemo.kotlin.forLoop.WhileActivity
 import com.zhongjh.kotlindemo.kotlin.grammar.*
@@ -22,6 +22,8 @@ import com.zhongjh.kotlindemo.kotlin.kotlinclass.AnonymousInnerActivity
 import com.zhongjh.kotlindemo.kotlin.kotlinclass.InnerActivity
 import com.zhongjh.kotlindemo.kotlin.kotlinclass.NestActivity
 import com.zhongjh.kotlindemo.kotlin.kotlinclass.PersonActivity
+import com.zhongjh.kotlindemo.kotlin.kotlininterface.funoverwrite.FunOverwriteActivity
+import com.zhongjh.kotlindemo.kotlin.kotlininterface.kotilininterface.KotlinInterfaceActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -135,6 +137,30 @@ class MainActivity : AppCompatActivity() {
 
         btnOverWriteProperty.setOnClickListener {
             val intent = Intent(this, OverwritePropertyActivity::class.java)
+            startActivity(intent)
+        }
+
+        // 接口
+        btnKotilinInterface.setOnClickListener {
+            val intent = Intent(this, KotlinInterfaceActivity::class.java)
+            startActivity(intent)
+        }
+
+        // 接口重写函数
+        btnFunOverwrite.setOnClickListener {
+            val intent = Intent(this, FunOverwriteActivity::class.java)
+            startActivity(intent)
+        }
+
+        // 扩展函数
+        btnExpandFun.setOnClickListener {
+            val intent = Intent(this, ExpandFunActivity::class.java)
+            startActivity(intent)
+        }
+
+        // 扩展一个空对象
+        btnExpandNull.setOnClickListener {
+            val intent = Intent(this, ExpandNullActivity::class.java)
             startActivity(intent)
         }
 
