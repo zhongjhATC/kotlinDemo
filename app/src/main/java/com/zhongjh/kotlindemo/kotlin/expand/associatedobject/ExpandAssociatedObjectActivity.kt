@@ -5,6 +5,13 @@ import android.os.Bundle
 import com.zhongjh.kotlindemo.R
 import kotlinx.android.synthetic.main.activity_expand_associated_object.*
 
+fun MyClass.Companion.foo(): String {
+    return "伴随对象的扩展函数\n"
+}
+
+val MyClass.Companion.no: Int
+    get() = 10
+
 class ExpandAssociatedObjectActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,16 +20,9 @@ class ExpandAssociatedObjectActivity : AppCompatActivity() {
         btnOperator.setOnClickListener { main() }
     }
 
-    fun MyClass.Companion.foo() {
-        tvContent.append("伴随对象的扩展函数\n")
-    }
-
-    val MyClass.Companion.no : Int
-        get() = 10
-
     fun main() {
         tvContent.append("no:${MyClass.no}\n")
-        MyClass.foo()
+        tvContent.append(MyClass.foo())
     }
 
 }

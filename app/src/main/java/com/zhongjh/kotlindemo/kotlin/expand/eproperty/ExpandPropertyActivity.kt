@@ -6,13 +6,13 @@ import com.zhongjh.kotlindemo.R
 import com.zhongjh.kotlindemo.kotlin.any.overwriteproperty.Foo
 import kotlinx.android.synthetic.main.activity_expand_property.*
 
+val <T>MutableList<T>.lastIndex: Int
+    get() = size - 1
+
+val Foo.bar: Int
+    get() = 1
+
 class ExpandPropertyActivity : AppCompatActivity() {
-
-    val <T>MutableList<T>.lastIndex: Int
-        get() = size - 1
-
-    val Foo.bar: Int
-        get() = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
