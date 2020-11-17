@@ -242,6 +242,47 @@
             tools:ignore="MissingConstraints" />
 
         <Button
+            android:id="@+id/btnExpandAssociatedObject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="伴生对象的扩展"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnExpandProperty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扩展属性"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnExpandMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扩展声明为成员"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnExpandMember2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以成员的形式定义的扩展函数"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="数据类" />
+
+        <Button
+            android:id="@+id/btnCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="复制"
+            tools:ignore="MissingConstraints" />
+
+        <Button
             android:id="@+id/btnExit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

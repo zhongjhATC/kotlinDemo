@@ -12,6 +12,9 @@ fun MyClass.Companion.foo(): String {
 val MyClass.Companion.no: Int
     get() = 10
 
+/**
+ * 伴生对象的扩展
+ */
 class ExpandAssociatedObjectActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

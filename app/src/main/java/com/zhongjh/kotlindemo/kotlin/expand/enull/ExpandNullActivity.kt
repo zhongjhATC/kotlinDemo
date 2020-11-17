@@ -13,6 +13,9 @@ fun Any?.toString() : String {
     return toString()
 }
 
+/**
+ * 扩展一个空对象
+ */
 class ExpandNullActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

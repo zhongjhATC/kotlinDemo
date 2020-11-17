@@ -5,6 +5,9 @@ import android.os.Bundle
 import com.zhongjh.kotlindemo.R
 import kotlinx.android.synthetic.main.activity_expand_member.*
 
+/**
+ * 扩展声明为成员
+ */
 class ExpandMemberActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

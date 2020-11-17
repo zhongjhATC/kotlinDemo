@@ -12,6 +12,9 @@ val <T>MutableList<T>.lastIndex: Int
 val Foo.bar: Int
     get() = 1
 
+/**
+ * 扩展属性
+ */
 class ExpandPropertyActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

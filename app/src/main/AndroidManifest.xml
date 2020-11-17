@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".kotlin.expand.emember.ExpandMemberActivity"></activity>
+        <activity android:name=".kotlin.dataclass.CopyActivity"></activity>
+        <activity android:name=".kotlin.expand.emember2.ExpandMember2Activity" />
+        <activity android:name=".kotlin.expand.emember.ExpandMemberActivity" />
         <activity android:name=".kotlin.expand.associatedobject.ExpandAssociatedObjectActivity" />
         <activity android:name=".kotlin.expand.eproperty.ExpandPropertyActivity" />
         <activity android:name=".kotlin.expand.enull.ExpandNullActivity" />
