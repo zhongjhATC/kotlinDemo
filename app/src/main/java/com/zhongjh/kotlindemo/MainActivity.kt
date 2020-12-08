@@ -10,6 +10,7 @@ import com.zhongjh.kotlindemo.kotlin.condition.IfActivity
 import com.zhongjh.kotlindemo.kotlin.condition.RangeActivity
 import com.zhongjh.kotlindemo.kotlin.condition.WhenActivity
 import com.zhongjh.kotlindemo.kotlin.dataclass.CopyActivity
+import com.zhongjh.kotlindemo.kotlin.dataclass.SealTypeActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.AnOperatorActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.CharActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.CharacterStringActivity
@@ -236,7 +237,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
+        // 密封类
+        btnSeal.setOnClickListener {
+            val intent = Intent(this, SealTypeActivity::class.java)
+            startActivity(intent)
+        }
 
         // endregion
 
@@ -248,8 +253,8 @@ class MainActivity : AppCompatActivity() {
 //            }, 500)
 //            ActivityManager am = (ActivityManager) getSystemService(ACTIVITY_SERVICE)
 //            am.killBackgroundProcesses("cn.com.android123.cwj")
-
         }
 
     }
+
 }

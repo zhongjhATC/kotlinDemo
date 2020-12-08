@@ -6,6 +6,9 @@ import com.zhongjh.kotlindemo.R
 import kotlinx.android.synthetic.main.activity_an_operator.tvContent
 import kotlinx.android.synthetic.main.activity_copy.*
 
+/**
+ * 复制类
+ */
 class CopyActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,13 +39,12 @@ class CopyActivity : AppCompatActivity() {
         val triple = Triple(1,2,3)
         tvContent.append("$pair \t $triple")
         tvContent.append("\n")
-        tvContent.append(pair.toList())
+        tvContent.append((pair.toList() + "").toString())
         tvContent.append("\n")
-        tvContent.append(triple.toList())
+        tvContent.append((triple.toList() + "").toString())
         tvContent.append("\n")
-        tvContent.append(pair.to(3))
-
-
+        tvContent.append((pair to 3).toString())
+        tvContent.append("\n")
     }
 
 }

@@ -283,6 +283,13 @@
             tools:ignore="MissingConstraints" />
 
         <Button
+            android:id="@+id/btnSeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密封"
+            tools:ignore="MissingConstraints" />
+
+        <Button
             android:id="@+id/btnExit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
