@@ -23,6 +23,8 @@ import com.zhongjh.kotlindemo.kotlin.expand.enull.ExpandNullActivity
 import com.zhongjh.kotlindemo.kotlin.expand.eproperty.ExpandPropertyActivity
 import com.zhongjh.kotlindemo.kotlin.forLoop.ReturnActivity
 import com.zhongjh.kotlindemo.kotlin.forLoop.WhileActivity
+import com.zhongjh.kotlindemo.kotlin.genericity.GenericityActivity
+import com.zhongjh.kotlindemo.kotlin.genericity.GenericityWhenActivity
 import com.zhongjh.kotlindemo.kotlin.grammar.*
 import com.zhongjh.kotlindemo.kotlin.kotlinclass.AnonymousInnerActivity
 import com.zhongjh.kotlindemo.kotlin.kotlinclass.InnerActivity
@@ -243,7 +245,23 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // endregion
+        // endregion 数据类与密封类
+
+        // region 泛型类
+
+        // 泛型基本声明
+        btnGenericity.setOnClickListener {
+            val intent = Intent(this, GenericityActivity::class.java)
+            startActivity(intent)
+        }
+
+        // 泛型选择
+        btnGenericityWhen.setOnClickListener {
+            val intent = Intent(this, GenericityWhenActivity::class.java)
+            startActivity(intent)
+        }
+
+        // endregion 泛型类
 
         btnExit.setOnClickListener {
 //            Handler().postDelayed(Runnable {

@@ -289,6 +289,26 @@
             android:text="密封"
             tools:ignore="MissingConstraints" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="泛型类" />
+
+        <Button
+            android:id="@+id/btnGenericity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="泛型"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnGenericityWhen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="泛型判断"
+            tools:ignore="MissingConstraints" />
+
         <Button
             android:id="@+id/btnExit"
             android:layout_width="wrap_content"
