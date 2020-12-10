@@ -310,6 +310,13 @@
             tools:ignore="MissingConstraints" />
 
         <Button
+            android:id="@+id/btnGenericConstrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="泛型约束"
+            tools:ignore="MissingConstraints" />
+
+        <Button
             android:id="@+id/btnExit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

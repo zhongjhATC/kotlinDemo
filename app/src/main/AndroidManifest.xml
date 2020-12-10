@@ -10,7 +10,8 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".kotlin.genericity.GenericConstraintActivity"></activity>
+        <activity android:name=".kotlin.genericity.MorphActivity"></activity>
+        <activity android:name=".kotlin.genericity.GenericConstraintActivity" />
         <activity android:name=".kotlin.genericity.GenericityWhenActivity" />
         <activity android:name=".kotlin.genericity.GenericityActivity" />
         <activity

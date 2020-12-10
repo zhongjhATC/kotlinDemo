@@ -23,6 +23,7 @@ import com.zhongjh.kotlindemo.kotlin.expand.enull.ExpandNullActivity
 import com.zhongjh.kotlindemo.kotlin.expand.eproperty.ExpandPropertyActivity
 import com.zhongjh.kotlindemo.kotlin.forLoop.ReturnActivity
 import com.zhongjh.kotlindemo.kotlin.forLoop.WhileActivity
+import com.zhongjh.kotlindemo.kotlin.genericity.GenericConstraintActivity
 import com.zhongjh.kotlindemo.kotlin.genericity.GenericityActivity
 import com.zhongjh.kotlindemo.kotlin.genericity.GenericityWhenActivity
 import com.zhongjh.kotlindemo.kotlin.grammar.*
@@ -258,6 +259,12 @@ class MainActivity : AppCompatActivity() {
         // 泛型选择
         btnGenericityWhen.setOnClickListener {
             val intent = Intent(this, GenericityWhenActivity::class.java)
+            startActivity(intent)
+        }
+
+        // 泛型约束
+        btnGenericConstrain.setOnClickListener {
+            val intent = Intent(this, GenericConstraintActivity::class.java)
             startActivity(intent)
         }
 
