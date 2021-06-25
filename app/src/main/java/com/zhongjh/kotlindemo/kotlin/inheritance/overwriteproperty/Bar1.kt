@@ -1,4 +1,4 @@
-package com.zhongjh.kotlindemo.kotlin.any.overwriteproperty
+package com.zhongjh.kotlindemo.kotlin.inheritance.overwriteproperty
 
 class Bar1 : Foo() {
 

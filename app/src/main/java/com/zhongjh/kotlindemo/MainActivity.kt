@@ -3,9 +3,9 @@ package com.zhongjh.kotlindemo
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.zhongjh.kotlindemo.kotlin.any.overwriteclass.OverwriteActivity
-import com.zhongjh.kotlindemo.kotlin.any.overwriteproperty.OverwritePropertyActivity
-import com.zhongjh.kotlindemo.kotlin.any.subclass.SubclassActivity
+import com.zhongjh.kotlindemo.kotlin.inheritance.overwriteclass.OverwriteActivity
+import com.zhongjh.kotlindemo.kotlin.inheritance.overwriteproperty.OverwritePropertyActivity
+import com.zhongjh.kotlindemo.kotlin.inheritance.subclass.SubclassActivity
 import com.zhongjh.kotlindemo.kotlin.condition.IfActivity
 import com.zhongjh.kotlindemo.kotlin.condition.RangeActivity
 import com.zhongjh.kotlindemo.kotlin.condition.WhenActivity
@@ -23,9 +23,7 @@ import com.zhongjh.kotlindemo.kotlin.expand.enull.ExpandNullActivity
 import com.zhongjh.kotlindemo.kotlin.expand.eproperty.ExpandPropertyActivity
 import com.zhongjh.kotlindemo.kotlin.forLoop.ReturnActivity
 import com.zhongjh.kotlindemo.kotlin.forLoop.WhileActivity
-import com.zhongjh.kotlindemo.kotlin.genericity.GenericConstraintActivity
-import com.zhongjh.kotlindemo.kotlin.genericity.GenericityActivity
-import com.zhongjh.kotlindemo.kotlin.genericity.GenericityWhenActivity
+import com.zhongjh.kotlindemo.kotlin.genericity.*
 import com.zhongjh.kotlindemo.kotlin.grammar.*
 import com.zhongjh.kotlindemo.kotlin.kotlinclass.AnonymousInnerActivity
 import com.zhongjh.kotlindemo.kotlin.kotlinclass.InnerActivity
@@ -265,6 +263,18 @@ class MainActivity : AppCompatActivity() {
         // 泛型约束
         btnGenericConstrain.setOnClickListener {
             val intent = Intent(this, GenericConstraintActivity::class.java)
+            startActivity(intent)
+        }
+
+        // 型变
+        btnMorph.setOnClickListener {
+            val intent = Intent(this, MorphActivity::class.java)
+            startActivity(intent)
+        }
+
+        // 星号投影
+        btnRadialProjection.setOnClickListener {
+            val intent = Intent(this,RadialProjectionActivity::class.java)
             startActivity(intent)
         }
 

@@ -1,6 +1,4 @@
-package com.zhongjh.kotlindemo.kotlin.any.subclass
-
-import com.zhongjh.kotlindemo.kotlin.any.subclass.Person
+package com.zhongjh.kotlindemo.kotlin.inheritance.subclass
 
 /**
  * 如果子类有主构造函数，则基类必须在主构造函数中立即初始化

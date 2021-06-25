@@ -1,6 +1,4 @@
-package com.zhongjh.kotlindemo.kotlin.any.subclass
-
-import com.zhongjh.kotlindemo.kotlin.any.subclass.Person
+package com.zhongjh.kotlindemo.kotlin.inheritance.subclass
 
 /**
  * 如果子类没有主构造函数，则必须在每一个二级构造函数中用super关键字初始化基类，或者在代理另一个构造函数。

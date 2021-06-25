@@ -1,4 +1,4 @@
-package com.zhongjh.kotlindemo.kotlin.any.overwriteproperty
+package com.zhongjh.kotlindemo.kotlin.inheritance.overwriteproperty
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package com.zhongjh.kotlindemo.kotlin.any.subclass
+package com.zhongjh.kotlindemo.kotlin.inheritance.subclass
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

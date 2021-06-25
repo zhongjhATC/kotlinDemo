@@ -317,6 +317,20 @@
             tools:ignore="MissingConstraints" />
 
         <Button
+            android:id="@+id/btnMorph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="型变"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnRadialProjection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="星号投影"
+            tools:ignore="MissingConstraints" />
+
+        <Button
             android:id="@+id/btnExit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

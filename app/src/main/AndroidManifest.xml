@@ -10,7 +10,8 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".kotlin.genericity.MorphActivity"></activity>
+        <activity android:name=".kotlin.genericity.RadialProjectionActivity"/>
+        <activity android:name=".kotlin.genericity.MorphActivity"/>
         <activity android:name=".kotlin.genericity.GenericConstraintActivity" />
         <activity android:name=".kotlin.genericity.GenericityWhenActivity" />
         <activity android:name=".kotlin.genericity.GenericityActivity" />
@@ -45,13 +46,13 @@
             android:name=".kotlin.kotlininterface.kotilininterface.KotlinInterfaceActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".kotlin.any.overwriteproperty.OverwritePropertyActivity"
+            android:name=".kotlin.inheritance.overwriteproperty.OverwritePropertyActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".kotlin.any.overwriteclass.OverwriteActivity"
+            android:name=".kotlin.inheritance.overwriteclass.OverwriteActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".kotlin.any.subclass.SubclassActivity"
+            android:name=".kotlin.inheritance.subclass.SubclassActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".kotlin.kotlinclass.AnonymousInnerActivity"

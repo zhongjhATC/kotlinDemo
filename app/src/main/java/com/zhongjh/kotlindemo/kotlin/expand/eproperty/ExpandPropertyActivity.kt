@@ -3,7 +3,7 @@ package com.zhongjh.kotlindemo.kotlin.expand.eproperty
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.zhongjh.kotlindemo.R
-import com.zhongjh.kotlindemo.kotlin.any.overwriteproperty.Foo
+import com.zhongjh.kotlindemo.kotlin.inheritance.overwriteproperty.Foo
 import kotlinx.android.synthetic.main.activity_expand_property.*
 
 val <T>MutableList<T>.lastIndex: Int

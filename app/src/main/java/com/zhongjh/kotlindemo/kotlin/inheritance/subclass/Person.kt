@@ -1,4 +1,4 @@
-package com.zhongjh.kotlindemo.kotlin.any.subclass
+package com.zhongjh.kotlindemo.kotlin.inheritance.subclass
 
 /**
  * 基类

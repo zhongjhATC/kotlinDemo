@@ -1,4 +1,4 @@
-package com.zhongjh.kotlindemo.kotlin.any.overwriteclass
+package com.zhongjh.kotlindemo.kotlin.inheritance.overwriteclass
 
 interface StudyInterface {
 
