@@ -15,6 +15,7 @@ import com.zhongjh.kotlindemo.kotlin.datatype.AnOperatorActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.CharActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.CharacterStringActivity
 import com.zhongjh.kotlindemo.kotlin.datatype.CompareActivity
+import com.zhongjh.kotlindemo.kotlin.enum.EnumActivity
 import com.zhongjh.kotlindemo.kotlin.expand.associatedobject.ExpandAssociatedObjectActivity
 import com.zhongjh.kotlindemo.kotlin.expand.efun.ExpandFunActivity
 import com.zhongjh.kotlindemo.kotlin.expand.emember.ExpandMemberActivity
@@ -272,13 +273,23 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // 星号投影
+        // 星号投射
         btnRadialProjection.setOnClickListener {
             val intent = Intent(this,RadialProjectionActivity::class.java)
             startActivity(intent)
         }
 
         // endregion 泛型类
+
+        // region 枚举类
+
+        btnEnum.setOnClickListener {
+            val intent = Intent(this, EnumActivity::class.java)
+            startActivity(intent)
+        }
+
+        // endregion 枚举类
+
 
         btnExit.setOnClickListener {
 //            Handler().postDelayed(Runnable {

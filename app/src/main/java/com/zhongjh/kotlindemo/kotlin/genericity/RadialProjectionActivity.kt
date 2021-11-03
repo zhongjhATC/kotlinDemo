@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.activity_seal.*
  *
  * @author 8
  * @date 2021/6/25
- * 星型投影
+ * 星号投射
  */
 class RadialProjectionActivity : AppCompatActivity() {
 

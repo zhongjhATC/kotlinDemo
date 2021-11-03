@@ -327,7 +327,20 @@
             android:id="@+id/btnRadialProjection"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="星号投影"
+            android:text="星号投射"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="枚举类" />
+
+        <Button
+            android:id="@+id/btnEnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="枚举"
             tools:ignore="MissingConstraints" />
 
         <Button

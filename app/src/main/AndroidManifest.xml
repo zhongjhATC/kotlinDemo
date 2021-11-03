@@ -124,6 +124,9 @@
             android:name=".kotlin.grammar.FunActivity"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".kotlin.enum.EnumActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
