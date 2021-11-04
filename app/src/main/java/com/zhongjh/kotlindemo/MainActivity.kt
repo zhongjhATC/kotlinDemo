@@ -231,7 +231,7 @@ class MainActivity : AppCompatActivity() {
 
         // endregion
 
-        // region 数据类与密封类
+        // region Kotlin 数据类与密封类
 
         // 复制
         btnCopy.setOnClickListener {
@@ -247,7 +247,7 @@ class MainActivity : AppCompatActivity() {
 
         // endregion 数据类与密封类
 
-        // region 泛型类
+        // region Kotlin 泛型类
 
         // 泛型基本声明
         btnGenericity.setOnClickListener {
@@ -281,15 +281,20 @@ class MainActivity : AppCompatActivity() {
 
         // endregion 泛型类
 
-        // region 枚举类
+        // region Kotlin 枚举类
 
         btnEnum.setOnClickListener {
             val intent = Intent(this, EnumActivity::class.java)
             startActivity(intent)
         }
 
-        // endregion 枚举类
+        // endregion Kotlin 对象表达式和对象声明
 
+        // region Kotlin 对象表达式和对象声明
+
+
+
+        // endregion Kotlin 对象表达式和对象声明
 
         btnExit.setOnClickListener {
 //            Handler().postDelayed(Runnable {
