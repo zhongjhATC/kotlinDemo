@@ -32,6 +32,8 @@ import com.zhongjh.kotlindemo.kotlin.kotlinclass.NestActivity
 import com.zhongjh.kotlindemo.kotlin.kotlinclass.PersonActivity
 import com.zhongjh.kotlindemo.kotlin.kotlininterface.funoverwrite.FunOverwriteActivity
 import com.zhongjh.kotlindemo.kotlin.kotlininterface.kotilininterface.KotlinInterfaceActivity
+import com.zhongjh.kotlindemo.kotlin.objectexpressionstatement.ObjectExpressionActivity
+import com.zhongjh.kotlindemo.kotlin.objectexpressionstatement.ObjectStatementActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -292,7 +294,15 @@ class MainActivity : AppCompatActivity() {
 
         // region Kotlin 对象表达式和对象声明
 
+        btnObjectExpression.setOnClickListener {
+            val intent = Intent(this, ObjectExpressionActivity::class.java)
+            startActivity(intent)
+        }
 
+        btnObjectStatement.setOnClickListener {
+            val intent = Intent(this, ObjectStatementActivity::class.java)
+            startActivity(intent)
+        }
 
         // endregion Kotlin 对象表达式和对象声明
 

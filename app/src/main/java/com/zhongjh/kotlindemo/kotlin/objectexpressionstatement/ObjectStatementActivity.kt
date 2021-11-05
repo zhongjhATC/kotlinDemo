@@ -24,10 +24,15 @@ class ObjectStatementActivity : AppCompatActivity() {
     fun main() {
         DataProviderManager.registerDataProvider()
         DataProviderManager.name
+
+        val data1 = DataProviderManager
+        val data2 = DataProviderManager
+        data1.name = "test"
+        tvContent.append("${data1.name} = ${data2.name}")
     }
 
     object DataProviderManager {
-        const val name = "name"
+        var name = "name"
         fun registerDataProvider() {
         }
     }

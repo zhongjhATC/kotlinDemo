@@ -343,6 +343,26 @@
             android:text="枚举"
             tools:ignore="MissingConstraints" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="对象表达式和对象声明" />
+
+        <Button
+            android:id="@+id/btnObjectExpression"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="对象表达类"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnObjectStatement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="对象声明"
+            tools:ignore="MissingConstraints" />
+
         <Button
             android:id="@+id/btnExit"
             android:layout_width="wrap_content"
