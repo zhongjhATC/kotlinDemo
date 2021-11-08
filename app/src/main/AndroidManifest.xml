@@ -133,6 +133,9 @@
             android:name=".kotlin.objectexpressionstatement.ObjectStatementActivity"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".kotlin.objectexpressionstatement.ObjectCompanionActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>

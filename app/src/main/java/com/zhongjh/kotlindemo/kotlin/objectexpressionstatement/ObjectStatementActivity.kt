@@ -28,7 +28,17 @@ class ObjectStatementActivity : AppCompatActivity() {
         val data1 = DataProviderManager
         val data2 = DataProviderManager
         data1.name = "test"
-        tvContent.append("${data1.name} = ${data2.name}")
+        tvContent.append("${data1.name} = ${data2.name}\n")
+
+        val s1 = Site
+        val s2 = Site
+        s1.url = "www.zhongjh.com"
+        tvContent.append("${s1.url}\n")
+        tvContent.append("${s2.url}\n")
+
+        var zhongjh = ZhongJH()
+//        zhongjh.DeskTop.url  // 错误，不能通过外部类的实例访问到该对象
+        ZhongJH.DeskTop.url  // 正确
     }
 
     object DataProviderManager {
@@ -36,5 +46,21 @@ class ObjectStatementActivity : AppCompatActivity() {
         fun registerDataProvider() {
         }
     }
+
+    object Site {
+        var url:String = ""
+        val name: String = "zhongjh"
+    }
+
+    class ZhongJH {
+        var name = "zhongjh"
+        object DeskTop{
+            var url = "www.zhongjh.com"
+            fun showName(){
+//                print{"desk legs $name"} // 错误，不能访问到外部类的方法和变量
+            }
+        }
+    }
+
 
 }

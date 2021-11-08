@@ -364,6 +364,13 @@
             tools:ignore="MissingConstraints" />
 
         <Button
+            android:id="@+id/btnObjectCompanion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="伴生对象"
+            tools:ignore="MissingConstraints" />
+
+        <Button
             android:id="@+id/btnExit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
