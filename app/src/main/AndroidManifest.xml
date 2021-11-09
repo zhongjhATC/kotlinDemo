@@ -136,6 +136,27 @@
             android:name=".kotlin.objectexpressionstatement.ObjectCompanionActivity"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".kotlin.by.ByClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlin.by.ByPropertyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlin.by.LazyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".kotlin.by.ObservableActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".kotlin.by.ByMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlin.by.NotNullActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>

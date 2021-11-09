@@ -3,6 +3,7 @@ package com.zhongjh.kotlindemo
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.zhongjh.kotlindemo.kotlin.by.*
 import com.zhongjh.kotlindemo.kotlin.inheritance.overwriteclass.OverwriteActivity
 import com.zhongjh.kotlindemo.kotlin.inheritance.overwriteproperty.OverwritePropertyActivity
 import com.zhongjh.kotlindemo.kotlin.inheritance.subclass.SubclassActivity
@@ -278,7 +279,7 @@ class MainActivity : AppCompatActivity() {
 
         // 星号投射
         btnRadialProjection.setOnClickListener {
-            val intent = Intent(this,RadialProjectionActivity::class.java)
+            val intent = Intent(this, RadialProjectionActivity::class.java)
             startActivity(intent)
         }
 
@@ -311,6 +312,41 @@ class MainActivity : AppCompatActivity() {
         }
 
         // endregion Kotlin 对象表达式和对象声明
+
+        // region Kotlin 委托
+
+        btnByClass.setOnClickListener {
+            val intent = Intent(this, ByClassActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnByProperty.setOnClickListener {
+            val intent = Intent(this, ByPropertyActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnByLazy.setOnClickListener {
+            val intent = Intent(this, LazyActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnObservable.setOnClickListener {
+            val intent = Intent(this, ObservableActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnByMap.setOnClickListener {
+            val intent = Intent(this, ByMapActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnNotNull.setOnClickListener {
+            val intent = Intent(this, NotNullActivity::class.java)
+            startActivity(intent)
+        }
+
+        // endregion Kotlin 委托
+
 
         btnExit.setOnClickListener {
 //            Handler().postDelayed(Runnable {

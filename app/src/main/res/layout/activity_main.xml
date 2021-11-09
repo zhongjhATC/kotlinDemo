@@ -370,6 +370,53 @@
             android:text="伴生对象"
             tools:ignore="MissingConstraints" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="委托" />
+
+        <Button
+            android:id="@+id/btnByClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="类委托"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnByProperty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="属性委托"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnByLazy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="延迟属性Lazy委托"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnObservable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可观察属性Observable"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnByMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="把属性储存在映射中"
+            tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/btnNotNull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Null"
+            tools:ignore="MissingConstraints" />
+
         <Button
             android:id="@+id/btnExit"
             android:layout_width="wrap_content"

@@ -8,9 +8,9 @@ import com.zhongjh.kotlindemo.kotlin.inheritance.overwrite
 import kotlinx.android.synthetic.main.activity_inner.*
 
 /**
- * 演示类委托
+ * 演示属性委托
  */
-class ByClassActivity : AppCompatActivity() {
+class ByPropertyActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,21 +21,11 @@ class ByClassActivity : AppCompatActivity() {
     }
 
     fun main() {
-        val b = BaseImpl(10)
-        Derived(b).print() // 输出 10
-    }
+        val e = Property()
+        println(e.p)     // 访问该属性，调用 getValue() 函数
 
-    // 创建接口
-    interface Base {
-        fun print()
+        e.p = "Runoob"   // 调用 setValue() 函数
+        println(e.p)
     }
-
-    // 实现此接口的被委托的类
-    class BaseImpl(val x: Int) : Base {
-        override fun print() { print(x) }
-    }
-
-    // 通过关键字 by 建立委托类
-    class Derived(b: Base) : Base by b
 
 }

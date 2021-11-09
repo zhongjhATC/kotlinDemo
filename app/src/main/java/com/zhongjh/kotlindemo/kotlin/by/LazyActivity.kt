@@ -2,15 +2,16 @@ package com.zhongjh.kotlindemo.kotlin.by
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import com.zhongjh.kotlindemo.R
 import com.zhongjh.kotlindemo.kotlin.inheritance.overwrite
 import kotlinx.android.synthetic.main.activity_inner.*
 
 /**
- * 演示类委托
+ * 演示延迟属性 Lazy委托
  */
-class ByClassActivity : AppCompatActivity() {
+class LazyActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,21 +22,16 @@ class ByClassActivity : AppCompatActivity() {
     }
 
     fun main() {
-        val b = BaseImpl(10)
-        Derived(b).print() // 输出 10
+        println(lazyValue)
+        println(lazyValue)
     }
 
-    // 创建接口
-    interface Base {
-        fun print()
+    val lazyValue: String by lazy {
+        // 第一次调用输出，第二次调用不执行
+        var helloZhongJH = "Hello"
+        helloZhongJH += " zhongjh"
+        Log.d("ByLazyActivity",helloZhongJH)
+        helloZhongJH
     }
-
-    // 实现此接口的被委托的类
-    class BaseImpl(val x: Int) : Base {
-        override fun print() { print(x) }
-    }
-
-    // 通过关键字 by 建立委托类
-    class Derived(b: Base) : Base by b
 
 }

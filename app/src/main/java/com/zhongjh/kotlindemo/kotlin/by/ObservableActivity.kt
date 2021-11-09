@@ -2,15 +2,18 @@ package com.zhongjh.kotlindemo.kotlin.by
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.KeyCharacterMap
 import android.view.View
 import com.zhongjh.kotlindemo.R
 import com.zhongjh.kotlindemo.kotlin.inheritance.overwrite
 import kotlinx.android.synthetic.main.activity_inner.*
+import kotlin.properties.Delegates
 
 /**
- * 演示类委托
+ * 演示可观察属性 Observable
  */
-class ByClassActivity : AppCompatActivity() {
+class ObservableActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,21 +24,15 @@ class ByClassActivity : AppCompatActivity() {
     }
 
     fun main() {
-        val b = BaseImpl(10)
-        Derived(b).print() // 输出 10
+        val user = User()
+        user.name = "第一次赋值"
+        user.name = "第二次赋值"
     }
 
-    // 创建接口
-    interface Base {
-        fun print()
+    class User {
+        var name: String by Delegates.observable("zhongjh") { property, oldValue, newValue ->
+            Log.d("ObservableActivity", "旧值：$oldValue -> 新值：$newValue")
+        }
     }
-
-    // 实现此接口的被委托的类
-    class BaseImpl(val x: Int) : Base {
-        override fun print() { print(x) }
-    }
-
-    // 通过关键字 by 建立委托类
-    class Derived(b: Base) : Base by b
 
 }

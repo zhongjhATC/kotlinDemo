@@ -2,15 +2,18 @@ package com.zhongjh.kotlindemo.kotlin.by
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.KeyCharacterMap
 import android.view.View
 import com.zhongjh.kotlindemo.R
 import com.zhongjh.kotlindemo.kotlin.inheritance.overwrite
 import kotlinx.android.synthetic.main.activity_inner.*
+import kotlin.properties.Delegates
 
 /**
- * 演示类委托
+ * 演示 把属性储存在映射中
  */
-class ByClassActivity : AppCompatActivity() {
+class NotNullActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,21 +24,13 @@ class ByClassActivity : AppCompatActivity() {
     }
 
     fun main() {
-        val b = BaseImpl(10)
-        Derived(b).print() // 输出 10
+        val foo = Foo()
+//        foo.notNullBar // by notNull后，这样是会报异常的
+        foo.notNullBar = "bar"
     }
 
-    // 创建接口
-    interface Base {
-        fun print()
+    class Foo {
+        var notNullBar: String by Delegates.notNull()
     }
-
-    // 实现此接口的被委托的类
-    class BaseImpl(val x: Int) : Base {
-        override fun print() { print(x) }
-    }
-
-    // 通过关键字 by 建立委托类
-    class Derived(b: Base) : Base by b
 
 }
