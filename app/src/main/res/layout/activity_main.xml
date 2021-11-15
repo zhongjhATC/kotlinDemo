@@ -417,6 +417,19 @@
             android:text="Not Null"
             tools:ignore="MissingConstraints" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="其他" />
+
+        <Button
+            android:id="@+id/btnWildCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="问号"
+            tools:ignore="MissingConstraints" />
+
         <Button
             android:id="@+id/btnExit"
             android:layout_width="wrap_content"

@@ -36,6 +36,7 @@ import com.zhongjh.kotlindemo.kotlin.kotlininterface.kotilininterface.KotlinInte
 import com.zhongjh.kotlindemo.kotlin.objectexpressionstatement.ObjectCompanionActivity
 import com.zhongjh.kotlindemo.kotlin.objectexpressionstatement.ObjectExpressionActivity
 import com.zhongjh.kotlindemo.kotlin.objectexpressionstatement.ObjectStatementActivity
+import com.zhongjh.kotlindemo.kotlin.other.WildCardActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -347,6 +348,14 @@ class MainActivity : AppCompatActivity() {
 
         // endregion Kotlin 委托
 
+        // region Kotlin 其它
+
+        btnWildCard.setOnClickListener {
+            val intent = Intent(this, WildCardActivity::class.java)
+            startActivity(intent)
+        }
+
+        // endregion Kotlin 其它
 
         btnExit.setOnClickListener {
 //            Handler().postDelayed(Runnable {

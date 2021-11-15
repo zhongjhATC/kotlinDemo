@@ -155,6 +155,9 @@
         <activity
             android:name=".kotlin.by.NotNullActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlin.other.WildCardActivity"
+            android:screenOrientation="portrait" />
 
         <activity
             android:name=".MainActivity"
