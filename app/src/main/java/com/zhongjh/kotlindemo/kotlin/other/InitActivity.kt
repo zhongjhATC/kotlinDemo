@@ -6,23 +6,18 @@ import com.zhongjh.kotlindemo.R
 import kotlinx.android.synthetic.main.activity_inner.*
 
 /**
- * 演示枚举类
+ * 演示init
  */
-class WildCardActivity : AppCompatActivity() {
+class InitActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_enum)
+        setContentView(R.layout.activity_init)
         btnOperator.setOnClickListener { main() }
     }
 
     fun main() {
-        val a = null
-        test1(a)
     }
 
-    fun test1(value : Int?) {
-        var value2 = value
-    }
 
 }

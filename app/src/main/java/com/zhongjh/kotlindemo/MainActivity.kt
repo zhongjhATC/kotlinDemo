@@ -36,7 +36,7 @@ import com.zhongjh.kotlindemo.kotlin.kotlininterface.kotilininterface.KotlinInte
 import com.zhongjh.kotlindemo.kotlin.objectexpressionstatement.ObjectCompanionActivity
 import com.zhongjh.kotlindemo.kotlin.objectexpressionstatement.ObjectExpressionActivity
 import com.zhongjh.kotlindemo.kotlin.objectexpressionstatement.ObjectStatementActivity
-import com.zhongjh.kotlindemo.kotlin.other.WildCardActivity
+import com.zhongjh.kotlindemo.kotlin.other.InitActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -350,8 +350,8 @@ class MainActivity : AppCompatActivity() {
 
         // region Kotlin 其它
 
-        btnWildCard.setOnClickListener {
-            val intent = Intent(this, WildCardActivity::class.java)
+        btnInit.setOnClickListener {
+            val intent = Intent(this, InitActivity::class.java)
             startActivity(intent)
         }
 
